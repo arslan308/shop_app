@@ -7,7 +7,6 @@
               <div class="Polaris-Layout__Section">
                 <div class="Polaris-Card">
                   <div class="Polaris-Card__Header">
-                    <h2 class="Polaris-Heading">Welcome <a href="{{ ShopifyApp::shop()->shopify_domain }}">{{ ShopifyApp::shop()->shopify_domain }}</a></h2>
                   </div>
                   <div class="Polaris-Card__Section">
                     {{-- <p>We have new items!</p> --}}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d0307d8e0d4a6d3ff4046e9239fea46",
+    "content-hash": "9b659081b94e3e180c3c8f95fc311631",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -1899,6 +1899,73 @@
                 "shopify"
             ],
             "time": "2020-03-02T04:33:29+00:00"
+        },
+        {
+            "name": "osiset/laravel-shopify",
+            "version": "v11.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/osiset/laravel-shopify.git",
+                "reference": "3402dad353c6136efd6d767ed08e03a760bc72c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/osiset/laravel-shopify/zipball/3402dad353c6136efd6d767ed08e03a760bc72c2",
+                "reference": "3402dad353c6136efd6d767ed08e03a760bc72c2",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "~2.5",
+                "funeralzone/valueobjects": "^0.4.5",
+                "jenssegers/agent": "^2.6",
+                "laravel/framework": "~5.8 | ^6.0 | ^7.0",
+                "osiset/basic-shopify-api": "^7.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/database": "~3.8 | ~4.0 | ~5.0",
+                "orchestra/testbench": "~3.8 | ~4.0 | ~5.0",
+                "phpunit/phpunit": "~8.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Osiset\\ShopifyApp\\ShopifyAppProvider"
+                    ],
+                    "aliases": {
+                        "ShopifyApp": "Osiset\\ShopifyApp\\Facades\\ShopifyApp"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Osiset\\ShopifyApp\\": "src/ShopifyApp"
+                },
+                "files": [
+                    "src/ShopifyApp/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tyler King",
+                    "email": "tyler@osiset.com"
+                }
+            ],
+            "description": "Shopify package for Laravel to aide in app development",
+            "keywords": [
+                "api",
+                "laravel",
+                "shopify",
+                "shopify-api"
+            ],
+            "time": "2020-04-09T09:07:01+00:00"
         },
         {
             "name": "paragonie/random_compat",

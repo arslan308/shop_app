@@ -3,23 +3,28 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use OhMyBrew\ShopifyApp\Facades\ShopifyApp;
+// use Osiset\ShopifyApp\Facades\ShopifyApp;
+// use Osiset\ShopifyApp\Models\Shop;
+// use App\Http\Controllers\Auth;
+use Osiset\BasicShopifyAPI;
 use Log;
 use DB;
 use App\Insta;
 class ShopifyController extends Controller
 {
     public function __construct() {
-        $this->middleware(['auth.shop']);   
+        $this->middleware(['auth.shopify']);   
     }
     public function products(Request $request) {
-        return $request;
-    $shop = ShopifyApp::shop();
-    $requests = $shop->api()->rest('GET', '/admin/api/2019-07/products.json');
+        return 123;
+    $shop  = new BasicShopifyAPI();
+    $requests = $shop->rest('GET', '/admin/api/2019-07/products.json');
+    return $requests;
+
     $script_tag = array(
     "script_tag" => array(
         "event" => "onload",
-        "src" => "https://ars.taajmart.com/js/custom.js"
+        "src" => "https://496a76e6.ngrok.io/js/custom.js"
     )
     );
     $shop->api()->rest('POST', '/admin/api/2020-04/script_tags.json',$script_tag);
