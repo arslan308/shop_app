@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="X-Frame-Options" value="*">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Shopify App made with Laravel') }}</title>
@@ -23,6 +24,13 @@
 </head>
 <body>
     <div id="app">
+
+      <div class="cstm-spiner" style="--top-bar-background:#00848e;display:none; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;">
+        <div class="Polaris-ProgressBar Polaris-ProgressBar--sizeSmall"><progress class="Polaris-ProgressBar__Progress" value="40" max="100"></progress>
+          <div class="Polaris-ProgressBar__Indicator" style="width: 40%;"><span class="Polaris-ProgressBar__Label">40%</span></div>
+        </div>
+      </div>
+
         <main class="p-4">
             <div style="height: 55px;display:none;" class="save_bar">
                 <div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;">

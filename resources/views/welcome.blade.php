@@ -42,7 +42,7 @@
         
         @if(isset($products->body->products))
         @foreach ($products->body->products as $key => $product)
-        {{-- <div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;">
+        <div style="--top-bar-background:#00848e; --top-bar-background-lighter:#1d9ba4; --top-bar-color:#f9fafb; --p-frame-offset:0px;">
             <div class="Polaris-Page">
               <div class="Polaris-Page-Header Polaris-Page-Header--separator Polaris-Page-Header--hasNavigation Polaris-Page-Header--hasActionMenu Polaris-Page-Header--mobileView">
                 <div class="Polaris-Page-Header__MainContent">
@@ -61,11 +61,11 @@
                   </div>
                 </div>
               </div>
-              <div class="Polaris-Page__Content"> --}}
-                {{-- <p>Page content</p> --}}
-              {{-- </div>
+              {{-- <div class="Polaris-Page__Content">
+                <p>Page content</p>
+              </div> --}}
             </div>
-          </div> --}}
+          </div>
         @endforeach 
         @endif
         @endsection
